@@ -2,8 +2,8 @@
 
 export class Calculator {
   //write your code here
-  constructor(x){
-      this._x = x;
+  constructor(){
+
   }
 
   set x(value) {
@@ -54,7 +54,7 @@ kalkulator.x = 8;
 //kalkulator.add(10).min(2).  //12
 
 
-console.log(kalkulator.pangkat(3));
+console.log(kalkulator.penjumlahan(3));
 
 
 /** note : you can use several features from ecmascript, such as:
