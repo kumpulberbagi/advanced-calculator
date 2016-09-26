@@ -30,7 +30,7 @@ constructor()
 
   pangkat(a)
   {
-    this.i = Math.pow(i,a)
+    this.i = Math.pow(this.i,a)
   }
 
   akarPangkat(a)

@@ -9,4 +9,5 @@ let myCalculator = new Calculator()
 myCalculator.penjumlahan(5)
 myCalculator.pengurangan(2)
 myCalculator.perkalian(2)
+
 myCalculator.print()
