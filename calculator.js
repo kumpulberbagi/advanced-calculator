@@ -6,45 +6,50 @@ export class Calculator {
 
   }
 
-  penjumlahan(angka1, angka2) {
-    return angka1 + angka2;
+  set a(value) {
+    this._a = value;
   }
 
-  pengurangan(angka1, angka2) {
-    return angka1 - angka2;
+  penjumlahan(angka) {
+    return this._a + angka;
   }
 
-  perkalian(angka1, angka2) {
-    return angka1 * angka2;
+  pengurangan(angka) {
+    return this._a - angka;
   }
 
-  pembagian(angka1, angka2) {
-    return angka1 / angka2;
+  perkalian(angka) {
+    return this._a * angka;
   }
 
-  pangkat(angka1, angka2) {
-    return Math.pow(angka1, angka2);
+  pembagian(angka) {
+    return this._a / angka;
   }
 
-  akar(angka1, angka2) {
-    return Math.sqrt(angka1, angka2);
+  pangkat(angka) {
+    return Math.pow(this._a, angka);
   }
 
-  luasLingkaran(angka1) {
-    return Math.PI * angka1;
+  akar(angka) {
+    return Math.sqrt(this._a, angka);
+  }
+
+  luasLingkaran(angka) {
+    return Math.PI * angka;
   }
 }
 
-var calculator = new Calculator();
 
+// var calculator = new Calculator();
+// calculator.a = 8;
 
-console.log(calculator.penjumlahan(2, 3));
-console.log(calculator.pengurangan(10, 2));
-console.log(calculator.perkalian(2, 3));
-console.log(calculator.pembagian(10, 5));
-console.log(calculator.pangkat(2, 3));
-console.log(calculator.akar(16, 2));
-console.log(calculator.luasLingkaran(5));
+// console.log(calculator.penjumlahan(5).penjumlahan(3));
+// console.log(calculator.pengurangan(2));
+// console.log(calculator.perkalian(2));
+// console.log(calculator.pembagian(2));
+// console.log(calculator.pangkat(2));
+// console.log(calculator.akar(2));
+// console.log(calculator.luasLingkaran(5));
 
 /** note : you can use several features from ecmascript, such as:
  * - Classes
