@@ -2,8 +2,8 @@
 
 export class Calculator {
   //write your code here
-  constructor(){
-
+  constructor(x=1){
+    this._x = x;
   }
 
   set x(value) {
@@ -45,16 +45,13 @@ export class Calculator {
   kelilingLingkaran(){
     return (Math.PI * this._x);
   }
+
+  result(){
+    return this.x;
+  }
 }
 
-var kalkulator = new Calculator();
-//kalkulator.add(10)
 
-kalkulator.x = 8;
-//kalkulator.add(10).min(2).  //12
-
-
-console.log(kalkulator.penjumlahan(3));
 
 
 /** note : you can use several features from ecmascript, such as:
