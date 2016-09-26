@@ -12,23 +12,26 @@ export class Calculator{
   get angka(){
     return this._angka
   }
+  //
   add(parameter){
-     return parameter + this._angka;
+    return this._angka += parameter;
   }
   sub(parameter){
-    return this._angka - parameter;
+    return this._angka -= parameter;
   }
 
   mul(parameter){
-    return this._angka * parameter;
+    return this._angka *= parameter;
   }
 
   div(parameter){
-    return this._angka / parameter;
+    return this._angka /= parameter;
   }
 
   rank(parameter){
-    return Math.pow(this._angka, parameter);
+
+    return Math.pow( this._angka , parameter);
+
   }
 
   root(){
@@ -36,7 +39,7 @@ export class Calculator{
   }
 
   circle(radius){
-    return Math.PI * radius
+    return Math.PI * (radius * radius)
   }
 
 
