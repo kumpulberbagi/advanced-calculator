@@ -1,28 +1,27 @@
 "use strict";
 
 export class Calculator {
-  constructor(x, y){
+  constructor(x){
     this._x = x;
-    this._y = y;
   }
   //write your code here
-  addition() {
-      return this._x+this._y;
+  addition(y) {
+      return this._x+y;
   }
-  substraction(){
-    return this._x-this._y;
+  substraction(y){
+    return this._x-y;
   }
-  multiplication() {
-    return this._x*this._y;
+  multiplication(y) {
+    return this._x*y;
   }
-  division() {
-    return this._x/this._y;
+  division(y) {
+    return this._x/y;
   }
-  power() {
-    return Math.pow(this._x, this._y);
+  power(y) {
+    return Math.pow(this._x, y);
   }
-  squareRoot() {
-    return Math.sqrt(this._x, this._y);
+  squareRoot(y) {
+    return Math.sqrt(this._x);
   }
   area(){
     return this._x*this._x*Math.PI;
