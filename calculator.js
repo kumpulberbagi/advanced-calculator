@@ -6,13 +6,13 @@ export class Calculator {
     this.num1 = num1;
 
   }
-
   perkalian(num2){
     return this.num1 * num2;
   }
 
   pengurangan(num2){
     return this.num1 - num2
+
   }
 
   penjumlahan(num2){
@@ -37,15 +37,7 @@ export class Calculator {
 
 }
 
-let kali = new Calculator(6);
 
-console.log(kali.perkalian(5));
-console.log(kali.pengurangan(5));
-console.log(kali.penjumlahan(5));
-console.log(kali.pembagian(5));
-console.log(kali.pangkat(5));
-console.log(kali.akar());
-console.log(kali.pi());
 
 
 
