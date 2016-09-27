@@ -15,42 +15,49 @@ export class Calculator {
   }
 
   penjumlahan(a){
-    return this._x + a;
+    this._x += a;
+    return this;
   }
 
   pengurangan(a){
-    return this._x - a;
+    this._x -= a;
+    return this;
   }
 
   perkalian(a){
-    return this._x * a;
+    this._x *= a;
+    return this;
   }
 
   pembagian(a){
-    return this._x / a;
+    this._x /= a;
+    return this;
   }
 
   pangkat(a){
-    return Math.pow(this._x, a);
+    this._x = Math.pow(this._x, a);
+    return this;
   }
 
   akarPangkat(a){
-    return Math.pow(this._x, 1/a);
+    this._x = Math.pow(this._x, 1/a);
+    return this;
   }
 
   luasLingkaran(){
-    return (0.25 * Math.PI * Math.pow(this._x, 2));
+    this._x = (0.25 * Math.PI * Math.pow(this._x, 2));
+    return this;
   }
 
   kelilingLingkaran(){
-    return (Math.PI * this._x);
+    this._x *= Math.PI;
+    return this;
   }
 
   result(){
     return this.x;
   }
 }
-
 
 
 
