@@ -5,13 +5,13 @@ import {
 } from "./calculator.js";
 
 // execute function on calculator.js in here
-var calculator = new Calculator(8);
+var calculator = new Calculator();
 
 // console.log(calculator.penjumlahan(5).penjumlahan(3));
-console.log(calculator.penjumlahan(2));
-console.log(calculator.pengurangan(2));
-console.log(calculator.perkalian(2));
-console.log(calculator.pembagian(2));
-console.log(calculator.pangkat(2));
-console.log(calculator.akar(2));
-console.log(calculator.luasLingkaran(5));
+console.log(calculator.penjumlahan(2).penjumlahan(3).perkalian(2).pembagian(3).pangkat(2).akar(2).luasLingkaran(2).print());
+// console.log(calculator.pengurangan(2));
+// console.log(calculator.perkalian(2));
+// console.log(calculator.pembagian(2));
+// console.log(calculator.pangkat(2));
+// console.log(calculator.akar(2));
+// console.log(calculator.luasLingkaran(5));
