@@ -2,36 +2,48 @@
 
 export class Calculator {
   //write your code here
-  constructor() {
-
+  constructor(value) {
+    this.value = value;
   }
 
-  set a(value) {
-    this._a = value;
-  }
+  // set a(value) {
+  //   this._a = value;
+  // }
 
   penjumlahan(angka) {
-    return this._a + angka;
+    // return this.value + angka;
+    this.angka = this.value + angka;
+    return this;
   }
 
   pengurangan(angka) {
-    return this._a - angka;
+    // return this.value - angka;
+    this.angka = this.value - angka;
+    return this;
   }
 
   perkalian(angka) {
-    return this._a * angka;
+    // return this.value * angka;
+    this.angka = this.value * angka;
+    return this;
   }
 
   pembagian(angka) {
-    return this._a / angka;
+    // return this.value / angka;
+    this.angka = this.value / angka;
+    return this;
   }
 
   pangkat(angka) {
-    return Math.pow(this._a, angka);
+    // return Math.pow(this.value, angka);
+    this.angka = Math.pow(this.value, angka);
+    return this;
   }
 
   akar(angka) {
-    return Math.sqrt(this._a, angka);
+    // return Math.sqrt(this.value, angka);
+    this.angka = Math.sqrt(this.value, angka);
+    return this;
   }
 
   luasLingkaran(angka) {
@@ -40,16 +52,7 @@ export class Calculator {
 }
 
 
-var calculator = new Calculator();
-calculator.a = 8;
 
-// console.log(calculator.penjumlahan(5).penjumlahan(3));
-console.log(calculator.pengurangan(2));
-console.log(calculator.perkalian(2));
-console.log(calculator.pembagian(2));
-console.log(calculator.pangkat(2));
-console.log(calculator.akar(2));
-console.log(calculator.luasLingkaran(5));
 
 /** note : you can use several features from ecmascript, such as:
  * - Classes
