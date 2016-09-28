@@ -4,13 +4,7 @@ import {Calculator} from "./calculator.js";
 
 var calculator = new Calculator();
 calculator.angka = 9;
-console.log("penjumlahan : " + calculator.add(10));
-console.log("pengurangan : " +calculator.sub(4));
-console.log("pembagian : " +calculator.div(3));
-console.log("perkalian : " +calculator.mul(2));
-console.log("akar : " +calculator.root());
-console.log("pangkat : " +calculator.rank(2));
-console.log("luas lingkaran : " +calculator.circle(4));
+console.log("hasil : " + calculator.add(10).sub(4).div(3).mul(2).root().rank(2).circle(4));
 
 
 // calculator.sub();
