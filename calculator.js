@@ -58,11 +58,6 @@ export class Calculator {
 }
 
 
-
-
-
-
-
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters
