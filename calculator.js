@@ -3,11 +3,20 @@
 const PI = 3.14
 
 export class Calculator {
-constructor()
+constructor(num)
 {
-  this.i = 0
+  this.i = num
 }
-
+  
+  set num(num)
+  {
+    this.i = num
+  }
+  get num()
+  {
+    return this.i
+  }
+  
   penjumlahan(a)
   {
     this.i += a
