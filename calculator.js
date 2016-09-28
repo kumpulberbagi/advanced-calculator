@@ -14,32 +14,39 @@ export class Calculator{
   }
   //
   add(parameter){
-    return this._angka += parameter;
+    this._angka += parameter;
+    return this
   }
   sub(parameter){
-    return this._angka -= parameter;
+    this._angka -= parameter;
+    return this
   }
 
   mul(parameter){
-    return this._angka *= parameter;
+    this._angka *= parameter;
+    return this
   }
 
   div(parameter){
-    return this._angka /= parameter;
+    this._angka /= parameter;
+    return this
   }
 
   rank(parameter){
 
-    return Math.pow( this._angka , parameter);
+    this._angka = Math.pow( this._angka , parameter);
+    return this;
 
   }
 
   root(){
-    return Math.sqrt(this._angka);
+    this._angka = Math.sqrt(this._angka);
+    return this
   }
 
   circle(radius){
-    return Math.PI * (radius * radius)
+    this._angka = Math.PI * (radius * radius)
+    return this;
   }
 
 
